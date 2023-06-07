@@ -4,12 +4,12 @@ using namespace std;
 
 int main() {
 	char string[] = { "JGMXCIJPAINKALNTHQNMA" };
-	int size = sizeof(string);
+	int size = sizeof(string) - 1;
 	sort(string, string + size);
 	cout << "Result: ";
 	
-	for (char c : string) {
-		cout << c << ' ';
+	for (char letter : string) {
+		cout << letter;
 	}
 	return 0;
 }
